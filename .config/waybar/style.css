@@ -1,1 +1,67 @@
-
+*{
+        font-family: "rajdhani";
+}
+#waybar {
+        background: #341314;
+        background: linear-gradient(90deg,rgba(52, 19, 20, 1) 0%, rgba(7, 9, 14, 1) 90%);
+}
+/* workspaces */
+#workspaces button {
+	background: transparent;
+        font-size: 21px;
+        font-weight: 600;
+        color: #fb5851;
+	text-shadow: none;
+}
+#workspaces button:hover {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        text-shadow: inherit;
+        transition: none;
+}
+#workspaces button.focused {
+        color: #fed740;
+        text-shadow: #fed740 0 0 4px;
+}
+#workspaces button.urgent {
+        color: #ff0000;
+        text-shadow: #ff0000 0 0 4px
+}
+/* icons */
+#custom-cpu-icon {
+        color: #5df3fc;
+        text-shadow: #5df3fc 0 0 4px;
+        padding: 0px 20px 0px 20px;
+        font-size: 22px;
+}
+#custom-ram-icon {
+        color: #20e47e;
+        text-shadow: #20e47e 0 0 4px;
+        padding: 0px 20px 0px 20px;
+        font-size: 22px;
+}
+#custom-vol-icon, #custom-net-icon, #custom-ts-icon {
+        color: #fb5851;
+        text-shadow: #fb5851 0 0 4px;
+        padding: 0px 16px 0px 16px;
+        font-size: 24px;
+}
+/* text */
+#cpu, #temperature, #memory, #window, #wireplumber, #network, #clock {
+        font-size: 20px;
+        font-weight: 500;
+}
+#cpu, #temperature, #window {
+	color: #5df3fc;
+}
+#memory {
+	color: #20e47e;
+}
+#wireplumber, #network, #clock {
+	color: #fb5851;
+}
+/* padding */
+#clock {
+	padding-right: 10px;
+}
