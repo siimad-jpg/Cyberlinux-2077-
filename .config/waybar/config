@@ -1,0 +1,76 @@
+{
+	"layer": "top",
+	"position": "top",
+
+	"modules-left": [
+		"sway/workspaces",
+		"group/cpu-info",
+		"custom/ram-icon",
+		"memory"
+	],
+	"modules-center": [
+		"sway/window"
+	],
+	"modules-right": [
+		"custom/vol-icon",
+		"wireplumber",
+		"custom/net-icon",
+		"network",
+		"custom/ts-icon",
+		"clock"
+	],
+	"clock": {
+		"format": "{:%Y-%m-%dT%H:%M}",
+		"tooltip-format": "{:%c}"
+	},
+	"wireplumber":
+	{
+		"format": "{volume}%"
+	},
+	"cpu":
+	{
+		"format": "{usage}% "
+	},
+	"temperature":
+	{
+		"hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+		"format": "{temperatureC}°C"
+	},
+	"memory":
+	{
+		"format": "{used}/{total}GiB"
+	},
+	"network": {
+		"format": "{bandwidthUpBytes} {bandwidthDownBytes}",
+		"format-disconnected": "FLATLINED"
+	},
+	"custom/cpu-icon": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/ram-icon": {
+		"format": "",
+		"tooltip": false
+	},
+	"custom/vol-icon": {
+		"format": "󰕾",
+		"tooltip": false
+	},
+	"custom/net-icon": {
+		"format": "󰲝",
+		"tooltip": false
+	},
+	"custom/ts-icon": {
+		"format": "",
+		"tooltip": false
+	},
+	"group/cpu-info": {
+		"orientation": "horizontal",
+		"modules": [
+			"custom/cpu-icon",
+			"cpu",
+			"temperature"
+		]
+	}
+
+}
