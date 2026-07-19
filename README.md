@@ -21,3 +21,5 @@ bindsym $mod+d exec wofi -S drun -c ~/.config/wofi/2077/config -s ~/.config/wofi
 exec waybar -c ~/.config/waybar/2077/config -s ~/.config/waybar/2077/style.css
 ```
 Enjoy!
+
+https://imgur.com/a/byiJ2xV
